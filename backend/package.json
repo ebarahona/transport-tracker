@@ -10,7 +10,9 @@
     "generate_paths": "node generate_paths.js",
     "prettier": "for file in *.js test/*.js; do prettier --write --single-quote --bracket-spacing=false $file; done",
     "typings": "typings install",
-    "check-updates": "npm-check-updates -u -a && npm install"
+    "check-updates": "npm-check-updates -u -a && npm install",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,8 @@
     "firebase-admin": "^4.2.1",
     "moment": "^2.18.1",
     "moment-timezone": "^0.5.13",
-    "sqlite3": "^3.1.8"
+    "sqlite3": "^3.1.8",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -39,5 +42,6 @@
     "prettier": "^1.2.2",
     "typescript": "^2.3.2",
     "typings": "^2.1.1"
-  }
+  },
+  "snyk": true
 }
