@@ -24,10 +24,10 @@
     "asyncawait": "^1.0.6",
     "bluebird": "^3.5.0",
     "csv-parse": "^1.2.0",
-    "firebase-admin": "^4.2.1",
+    "firebase-admin": "^5.8.0",
     "moment": "^2.18.1",
     "moment-timezone": "^0.5.13",
-    "sqlite3": "^3.1.8"
+    "sqlite3": "^5.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
